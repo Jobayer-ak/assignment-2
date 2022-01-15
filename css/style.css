@@ -234,9 +234,13 @@ footer{
 
 /* =======Media Quaries ========= */
 @media only screen and (max-width:688px){
-    /* .container{
-        width: 100%;
-    } */
+}
+.nav-menu ul{
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
     .top-section{
         flex-direction: column-reverse; 
     }
@@ -245,20 +249,12 @@ footer{
         width: 257px;
         
     }
-    .nav{
+    .brand-logos{
         flex-direction: column;
-
+        row-gap: 50px;
+        border: 0;
     }
-    .nav-menu ul{
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+    
+    
 
 }
-
-
-
-
-
