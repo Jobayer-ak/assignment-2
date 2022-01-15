@@ -69,7 +69,6 @@ main{
 }
 .influencer-img:hover .main-camera-img{
     transform: rotate(30deg);
-    /* transform-origin: top right; */
 }
 .main-camera-img{
     position: absolute;
@@ -97,9 +96,10 @@ main{
     margin-top: 100px;
 }
 .collection-title{
-    font-size: 28px;
+    font-size: 36px;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 50px;
 }
 .products{
     display: grid;
@@ -211,9 +211,54 @@ footer{
     font-size: 14px;
 }
 .footer-social-icons{
-    margin-top: 17px;
+    margin-top: 30px;
     margin-bottom: 50px;
+    /* background-color: #22213C; */
 }
+.footer-social-icons a{
+    background: rgba(122, 25, 2, 0.1);
+    margin-right:  12px;
+    padding: 17px 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footer-social-icons .fab{
+    font-size: 1.3em;
+}
+.footer-social-icons a:hover {
+    background: burlywood;
+    color: blue;
+    transform: rotate(360deg);
+}
+
+/* =======Media Quaries ========= */
+@media only screen and (max-width:688px){
+    /* .container{
+        width: 100%;
+    } */
+    .top-section{
+        flex-direction: column-reverse; 
+    }
+    .top-section img{
+        width: 257px;
+        width: 257px;
+        
+    }
+    .nav{
+        flex-direction: column;
+
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+}
+
+
 
 
 
