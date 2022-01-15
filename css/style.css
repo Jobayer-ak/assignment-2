@@ -60,6 +60,7 @@ main{
     font-size: 52px;
     display: inline-block;
     margin-bottom: 0;
+    margin-top: 0;
 }
 .influencer-desc p{
     margin-top: 0;
@@ -166,11 +167,12 @@ main{
 .feature-products{
     display: flex;
     margin-top: 100px;
-    align-items: flex-start;
+    align-items: center;
     padding:
 }
 .feature-img img{
     width: 500px;
+    height: 280px;
     border-radius: 10px;
 }
 .feature-desc{
@@ -180,6 +182,7 @@ main{
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 16px;
+    margin-top: 0;
 }
 .feature-desc p{
     margin-top: 0;
@@ -233,15 +236,18 @@ footer{
 }
 
 /* =======Media Quaries ========= */
+
 @media only screen and (max-width:688px){
-}
-.nav-menu ul{
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-    .top-section{
+    .container{
+        width: 100%;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .top-section, .feature-products{
         flex-direction: column-reverse; 
     }
     .top-section img{
@@ -256,6 +262,14 @@ footer{
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-desc{
+        width: 100%;
+        align-items: center;
+    }
+    .feature-img img{
+        width: 299px;
+        height: 188px;
     }
     
 
